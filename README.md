@@ -291,85 +291,30 @@ flowchart TD
 ### Behavioral Detection Classes
 
 ```mermaid
-%%{init: {
-  "theme": "base",
-  "themeVariables": {
-    "background": "#ffffffff",
-    "lineColor": "#ffffffff",
-    "textColor": "#ffffffff"
-  },
-  "themeCSS": "
-    /* Node shapes: cover common variants across Mermaid versions */
-    g.mindmap-node path,
-    g.mindmap-node rect,
-    g.mindmap-node circle,
-    g.mindmap-node ellipse,
-    g.mindmap-node .bubble {
-      fill: #FFD166 !important;      /* default bright */
-      stroke: #14213D !important;
-      stroke-width: 1.5px !important;
-    }
-
-    /* Alternate colors by sibling index for variety (no depth classes needed) */
-    g.mindmap-node:nth-of-type(5n+1) path,
-    g.mindmap-node:nth-of-type(5n+1) rect,
-    g.mindmap-node:nth-of-type(5n+1) circle,
-    g.mindmap-node:nth-of-type(5n+1) ellipse { fill: #FFD166 !important; }  /* yellow */
-    g.mindmap-node:nth-of-type(5n+2) path,
-    g.mindmap-node:nth-of-type(5n+2) rect,
-    g.mindmap-node:nth-of-type(5n+2) circle,
-    g.mindmap-node:nth-of-type(5n+2) ellipse { fill: #06D6A0 !important; }  /* mint */
-    g.mindmap-node:nth-of-type(5n+3) path,
-    g.mindmap-node:nth-of-type(5n+3) rect,
-    g.mindmap-node:nth-of-type(5n+3) circle,
-    g.mindmap-node:nth-of-type(5n+3) ellipse { fill: #118AB2 !important; }  /* blue */
-    g.mindmap-node:nth-of-type(5n+4) path,
-    g.mindmap-node:nth-of-type(5n+4) rect,
-    g.mindmap-node:nth-of-type(5n+4) circle,
-    g.mindmap-node:nth-of-type(5n+4) ellipse { fill: #ffffffff !important; }  /* pink */
-    g.mindmap-node:nth-of-type(5n) path,
-    g.mindmap-node:nth-of-type(5n) rect,
-    g.mindmap-node:nth-of-type(5n) circle,
-    g.mindmap-node:nth-of-type(5n) ellipse { fill: #ffffffff !important; }    /* violet */
-
-    /* Ensure labels are readable */
-    g.mindmap-node text,
-    .label text,
-    g.mindmap-node .nodeLabel {
-      fill: #ffffffff !important;
-      font-weight: 600;
-    }
-
-    /* Edge styling */
-    .edgePaths path, .edgePath .path {
-      stroke: #ffffffff !important;
-      stroke-width: 2px !important;
-    }
-  "
-}}%%
+%%{init: {"theme": "forest"}}%%
 mindmap
-  root)Behavioral Indicators(
-    )Physical Aggression(
+  root)🧠 Behavioral Indicators(
+    )🔴 Physical Aggression(
       Striking motions
       Pushing gestures
       Grabbing actions
       Threatening postures
-    )Coercive Control(
+    )⚖️ Coercive Control(
       Adult-minor proximity
       Restrictive movement
       Hand-to-arm contact
       Velocity mismatch
-    )Group Dynamics(
+    )👥 Group Dynamics(
       Surrounding formation
       Coordinated movement
       Power positioning
       Escape blocking
-    )Suspicious Exchanges(
+    )🔄 Suspicious Exchanges(
       Brief encounters
       Object transfers
       Rapid divergence
       Directional changes
-    )Predatory Behavior(
+    )👁️ Predatory Behavior(
       Prolonged observation
       Targeted approach
       Following patterns
