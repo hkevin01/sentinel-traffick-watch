@@ -294,9 +294,9 @@ flowchart TD
 %%{init: {
   "theme": "base",
   "themeVariables": {
-    "background": "#0b0f14",
-    "lineColor": "#20262e",
-    "textColor": "#111111"
+    "background": "#ffffffff",
+    "lineColor": "#ffffffff",
+    "textColor": "#ffffffff"
   },
   "themeCSS": "
     /* Node shapes: cover common variants across Mermaid versions */
