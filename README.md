@@ -291,30 +291,30 @@ flowchart TD
 ### Behavioral Detection Classes
 
 ```mermaid
-%%{init: {'mindmap': {'theme': 'dark'}, 'themeVariables': {'primaryColor': '#2d3748', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4a5568', 'lineColor': '#718096', 'secondaryColor': '#1a365d', 'tertiaryColor': '#22543d'}}}%%
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#2d3748', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4a5568', 'lineColor': '#ffffff', 'secondaryColor': '#1a365d', 'secondaryTextColor': '#ffffff', 'tertiaryColor': '#22543d', 'tertiaryTextColor': '#ffffff', 'background': '#1a202c', 'mainBkg': '#2d3748', 'secondBkg': '#1a365d', 'tertiaryBkg': '#22543d'}}}%%
 mindmap
-  root((Behavioral<br/>Indicators))
-    Physical Aggression
+  root)Behavioral Indicators(
+    )Physical Aggression(
       Striking motions
       Pushing gestures
       Grabbing actions
       Threatening postures
-    Coercive Control
+    )Coercive Control(
       Adult-minor proximity
       Restrictive movement
       Hand-to-arm contact
       Velocity mismatch
-    Group Dynamics
+    )Group Dynamics(
       Surrounding formation
       Coordinated movement
       Power positioning
       Escape blocking
-    Suspicious Exchanges
+    )Suspicious Exchanges(
       Brief encounters
       Object transfers
       Rapid divergence
       Directional changes
-    Predatory Behavior
+    )Predatory Behavior(
       Prolonged observation
       Targeted approach
       Following patterns
