@@ -331,7 +331,9 @@ flowchart TD
     class A rootNode
     class B,C,D,E,F categoryNode
     class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 leafNode
-```### Privacy & Ethics Framework
+```
+
+### Privacy & Ethics Framework
 
 | Principle | Implementation | Technology | Compliance |
 |-----------|----------------|------------|-------------|
