@@ -291,34 +291,47 @@ flowchart TD
 ### Behavioral Detection Classes
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#2d3748', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4a5568', 'lineColor': '#ffffff', 'secondaryColor': '#1a365d', 'secondaryTextColor': '#ffffff', 'tertiaryColor': '#22543d', 'tertiaryTextColor': '#ffffff', 'background': '#1a202c', 'mainBkg': '#2d3748', 'secondBkg': '#1a365d', 'tertiaryBkg': '#22543d'}}}%%
-mindmap
-  root)Behavioral Indicators(
-    )Physical Aggression(
-      Striking motions
-      Pushing gestures
-      Grabbing actions
-      Threatening postures
-    )Coercive Control(
-      Adult-minor proximity
-      Restrictive movement
-      Hand-to-arm contact
-      Velocity mismatch
-    )Group Dynamics(
-      Surrounding formation
-      Coordinated movement
-      Power positioning
-      Escape blocking
-    )Suspicious Exchanges(
-      Brief encounters
-      Object transfers
-      Rapid divergence
-      Directional changes
-    )Predatory Behavior(
-      Prolonged observation
-      Targeted approach
-      Following patterns
-      Isolation attempts
+flowchart TD
+    A[🧠 Behavioral Indicators<br/>Detection System]
+
+    A --> B[🔴 Physical Aggression]
+    A --> C[⚖️ Coercive Control]
+    A --> D[👥 Group Dynamics]
+    A --> E[🔄 Suspicious Exchanges]
+    A --> F[👁️ Predatory Behavior]
+
+    B --> B1[Striking motions<br/>Hand-to-body contact]
+    B --> B2[Pushing gestures<br/>Forceful movement]
+    B --> B3[Grabbing actions<br/>Restraining holds]
+    B --> B4[Threatening postures<br/>Intimidation stance]
+
+    C --> C1[Adult-minor proximity<br/>Uncomfortably close]
+    C --> C2[Restrictive movement<br/>Limited mobility]
+    C --> C3[Hand-to-arm contact<br/>Controlling grip]
+    C --> C4[Velocity mismatch<br/>Forced pace]
+
+    D --> D1[Surrounding formation<br/>Encirclement pattern]
+    D --> D2[Coordinated movement<br/>Synchronized actions]
+    D --> D3[Power positioning<br/>Blocking exits]
+    D --> D4[Escape blocking<br/>Preventing departure]
+
+    E --> E1[Brief encounters<br/>Quick interactions]
+    E --> E2[Object transfers<br/>Handoff events]
+    E --> E3[Rapid divergence<br/>Sudden separation]
+    E --> E4[Directional changes<br/>Route alterations]
+
+    F --> F1[Prolonged observation<br/>Extended watching]
+    F --> F2[Targeted approach<br/>Deliberate movement]
+    F --> F3[Following patterns<br/>Tracking behavior]
+    F --> F4[Isolation attempts<br/>Separation tactics]
+
+    classDef mainNode fill:#2d3748,stroke:#4a5568,stroke-width:3px,color:#ffffff,font-weight:bold
+    classDef categoryNode fill:#1a365d,stroke:#2c5282,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef detailNode fill:#22543d,stroke:#38a169,stroke-width:2px,color:#ffffff
+
+    class A mainNode
+    class B,C,D,E,F categoryNode
+    class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 detailNode
 ```
 
 ### Privacy & Ethics Framework
