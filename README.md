@@ -292,46 +292,46 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[🧠 Behavioral Indicators<br/>Detection System]
+    A((🧠 Behavioral<br/>Indicators))
 
-    A --> B[🔴 Physical Aggression]
-    A --> C[⚖️ Coercive Control]
-    A --> D[👥 Group Dynamics]
-    A --> E[🔄 Suspicious Exchanges]
-    A --> F[👁️ Predatory Behavior]
+    A --- B((🔴 Physical<br/>Aggression))
+    A --- C((⚖️ Coercive<br/>Control))
+    A --- D((👥 Group<br/>Dynamics))
+    A --- E((🔄 Suspicious<br/>Exchanges))
+    A --- F((👁️ Predatory<br/>Behavior))
 
-    B --> B1[Striking motions<br/>Hand-to-body contact]
-    B --> B2[Pushing gestures<br/>Forceful movement]
-    B --> B3[Grabbing actions<br/>Restraining holds]
-    B --> B4[Threatening postures<br/>Intimidation stance]
+    B --- B1((Striking<br/>motions))
+    B --- B2((Pushing<br/>gestures))
+    B --- B3((Grabbing<br/>actions))
+    B --- B4((Threatening<br/>postures))
 
-    C --> C1[Adult-minor proximity<br/>Uncomfortably close]
-    C --> C2[Restrictive movement<br/>Limited mobility]
-    C --> C3[Hand-to-arm contact<br/>Controlling grip]
-    C --> C4[Velocity mismatch<br/>Forced pace]
+    C --- C1((Adult-minor<br/>proximity))
+    C --- C2((Restrictive<br/>movement))
+    C --- C3((Hand-to-arm<br/>contact))
+    C --- C4((Velocity<br/>mismatch))
 
-    D --> D1[Surrounding formation<br/>Encirclement pattern]
-    D --> D2[Coordinated movement<br/>Synchronized actions]
-    D --> D3[Power positioning<br/>Blocking exits]
-    D --> D4[Escape blocking<br/>Preventing departure]
+    D --- D1((Surrounding<br/>formation))
+    D --- D2((Coordinated<br/>movement))
+    D --- D3((Power<br/>positioning))
+    D --- D4((Escape<br/>blocking))
 
-    E --> E1[Brief encounters<br/>Quick interactions]
-    E --> E2[Object transfers<br/>Handoff events]
-    E --> E3[Rapid divergence<br/>Sudden separation]
-    E --> E4[Directional changes<br/>Route alterations]
+    E --- E1((Brief<br/>encounters))
+    E --- E2((Object<br/>transfers))
+    E --- E3((Rapid<br/>divergence))
+    E --- E4((Directional<br/>changes))
 
-    F --> F1[Prolonged observation<br/>Extended watching]
-    F --> F2[Targeted approach<br/>Deliberate movement]
-    F --> F3[Following patterns<br/>Tracking behavior]
-    F --> F4[Isolation attempts<br/>Separation tactics]
+    F --- F1((Prolonged<br/>observation))
+    F --- F2((Targeted<br/>approach))
+    F --- F3((Following<br/>patterns))
+    F --- F4((Isolation<br/>attempts))
 
-    classDef mainNode fill:#2d3748,stroke:#4a5568,stroke-width:3px,color:#ffffff,font-weight:bold
-    classDef categoryNode fill:#1a365d,stroke:#2c5282,stroke-width:2px,color:#ffffff,font-weight:bold
-    classDef detailNode fill:#22543d,stroke:#38a169,stroke-width:2px,color:#ffffff
+    classDef rootNode fill:#2d3748,stroke:#4a5568,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:14px
+    classDef categoryNode fill:#1a365d,stroke:#2c5282,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
+    classDef leafNode fill:#22543d,stroke:#38a169,stroke-width:2px,color:#ffffff,font-size:11px
 
-    class A mainNode
+    class A rootNode
     class B,C,D,E,F categoryNode
-    class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 detailNode
+    class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 leafNode
 ```
 
 ### Privacy & Ethics Framework
