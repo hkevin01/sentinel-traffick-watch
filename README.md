@@ -294,44 +294,56 @@ flowchart TD
 %%{init: {
   "theme": "base",
   "themeVariables": {
-    "background": "#0b0b0b",
-
-    /* Bright node backgrounds */
-    "mainBkg": "#FFD166",        /* warm yellow */
-    "secondBkg": "#06D6A0",      /* mint green */
-    "tertiaryBkg": "#118AB2",    /* azure blue */
-
-    /* Borders and lines for contrast */
-    "primaryColor": "#073B4C",   /* dark border */
-    "primaryBorderColor": "#073B4C",
-    "lineColor": "#000000",
-
-    /* Let Mermaid compute dark text for bright bg */
-    "textColor": "#111111",
-    "nodeTextColor": "#111111"
+    "background": "#0b0f14",
+    "lineColor": "#20262e",
+    "textColor": "#111111"
   },
   "themeCSS": "
-    /* Force vivid backgrounds for all mindmap nodes (covers variations) */
-    .mindmap-node rect, .mindmap-node circle, .mindmap-node ellipse {
-      fill: #FFD166 !important; /* default bright yellow */
-      stroke: #073B4C !important;
-      stroke-width: 1.5px;
+    /* Node shapes: cover common variants across Mermaid versions */
+    g.mindmap-node path,
+    g.mindmap-node rect,
+    g.mindmap-node circle,
+    g.mindmap-node ellipse,
+    g.mindmap-node .bubble {
+      fill: #FFD166 !important;      /* default bright */
+      stroke: #14213D !important;
+      stroke-width: 1.5px !important;
     }
-    /* Alternate colors by depth for visual grouping */
-    .mindmap-node.depth-1 rect, .mindmap-node.depth-1 circle, .mindmap-node.depth-1 ellipse { fill: #FFD166 !important; }
-    .mindmap-node.depth-2 rect, .mindmap-node.depth-2 circle, .mindmap-node.depth-2 ellipse { fill: #06D6A0 !important; }
-    .mindmap-node.depth-3 rect, .mindmap-node.depth-3 circle, .mindmap-node.depth-3 ellipse { fill: #118AB2 !important; }
-    .mindmap-node.depth-4 rect, .mindmap-node.depth-4 circle, .mindmap-node.depth-4 ellipse { fill: #EF476F !important; }
-    .mindmap-node.depth-5 rect, .mindmap-node.depth-5 circle, .mindmap-node.depth-5 ellipse { fill: #A66CFF !important; }
 
-    /* Ensure text stays dark for readability on bright fills */
-    .mindmap-node text, .label text {
+    /* Alternate colors by sibling index for variety (no depth classes needed) */
+    g.mindmap-node:nth-of-type(5n+1) path,
+    g.mindmap-node:nth-of-type(5n+1) rect,
+    g.mindmap-node:nth-of-type(5n+1) circle,
+    g.mindmap-node:nth-of-type(5n+1) ellipse { fill: #FFD166 !important; }  /* yellow */
+    g.mindmap-node:nth-of-type(5n+2) path,
+    g.mindmap-node:nth-of-type(5n+2) rect,
+    g.mindmap-node:nth-of-type(5n+2) circle,
+    g.mindmap-node:nth-of-type(5n+2) ellipse { fill: #06D6A0 !important; }  /* mint */
+    g.mindmap-node:nth-of-type(5n+3) path,
+    g.mindmap-node:nth-of-type(5n+3) rect,
+    g.mindmap-node:nth-of-type(5n+3) circle,
+    g.mindmap-node:nth-of-type(5n+3) ellipse { fill: #118AB2 !important; }  /* blue */
+    g.mindmap-node:nth-of-type(5n+4) path,
+    g.mindmap-node:nth-of-type(5n+4) rect,
+    g.mindmap-node:nth-of-type(5n+4) circle,
+    g.mindmap-node:nth-of-type(5n+4) ellipse { fill: #EF476F !important; }  /* pink */
+    g.mindmap-node:nth-of-type(5n) path,
+    g.mindmap-node:nth-of-type(5n) rect,
+    g.mindmap-node:nth-of-type(5n) circle,
+    g.mindmap-node:nth-of-type(5n) ellipse { fill: #A66CFF !important; }    /* violet */
+
+    /* Ensure labels are readable */
+    g.mindmap-node text,
+    .label text,
+    g.mindmap-node .nodeLabel {
       fill: #111111 !important;
+      font-weight: 600;
     }
 
-    /* Edge colors */
+    /* Edge styling */
     .edgePaths path, .edgePath .path {
-      stroke: #000000 !important;
+      stroke: #2b2d42 !important;
+      stroke-width: 2px !important;
     }
   "
 }}%%
