@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![Docker](https://img.shields.io/badge/do    A --> B((🔴 Physical Aggression))   A --> B((🔴 Physical Aggression))   A --> B((🔴 Physical Aggression))   A --> B((🔴 Physical Aggression))ker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 
 **AI-Powered Human Trafficking Detection System**
@@ -291,51 +291,6 @@ flowchart TD
 ### Behavioral Detection Classes
 
 ```mermaid
-flowchart TD
-    A((🧠 Behavioral Indicators<br/>Detection System))
-
-    A --> B((� Physical Aggression))
-    B --> B1((Striking motions))
-    B1 --> B2((Pushing gestures))
-    B2 --> B3((Grabbing actions))
-    B3 --> B4((Threatening postures))
-
-    B4 --> C((⚖️ Coercive Control))
-    C --> C1((Adult-minor proximity))
-    C1 --> C2((Restrictive movement))
-    C2 --> C3((Hand-to-arm contact))
-    C3 --> C4((Velocity mismatch))
-
-    C4 --> D((👥 Group Dynamics))
-    D --> D1((Surrounding formation))
-    D1 --> D2((Coordinated movement))
-    D2 --> D3((Power positioning))
-    D3 --> D4((Escape blocking))
-
-    D4 --> E((🔄 Suspicious Exchanges))
-    E --> E1((Brief encounters))
-    E1 --> E2((Object transfers))
-    E2 --> E3((Rapid divergence))
-    E3 --> E4((Directional changes))
-
-    E4 --> F((👁️ Predatory Behavior))
-    F --> F1((Prolonged observation))
-    F1 --> F2((Targeted approach))
-    F2 --> F3((Following patterns))
-    F3 --> F4((Isolation attempts))
-
-    classDef rootNode fill:#2d3748,stroke:#4a5568,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:14px
-    classDef categoryNode fill:#1a365d,stroke:#2c5282,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
-    classDef leafNode fill:#22543d,stroke:#38a169,stroke-width:2px,color:#ffffff,font-size:11px
-
-    class A rootNode
-    class B,C,D,E,F categoryNode
-    class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 leafNode
-```
-
-### Behavioral Detection Classes
-
-```mermaid
 %%{init: {
   "theme": "dark",
   "themeVariables": {
@@ -381,7 +336,7 @@ mindmap
       Targeted approach
       Following patterns
       Isolation attempts
-'''
+```
 
 ### Privacy & Ethics Framework
 
