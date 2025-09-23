@@ -293,8 +293,10 @@ flowchart TD
 ```mermaid
 %%{init: {
   "theme": "dark",
+  "maxTextSize": 42,
   "themeVariables": {
     "background": "#1a202c",
+
     "mainBkg": "#2d3748",
     "secondBkg": "#1a365d",
     "tertiaryBkg": "#22543d",
@@ -303,10 +305,9 @@ flowchart TD
     "primaryBorderColor": "#4a5568",
     "lineColor": "#ffffff",
 
-    "primaryTextColor": "#ffffff",
-    "secondaryTextColor": "#ffffff",
-    "tertiaryTextColor": "#ffffff",
-    "textColor": "#ffffff"            /* General text color fallback */
+    "textColor": "#ffffff",
+    "nodeTextColor": "#ffffff",
+    "contrast": "false"   /* prevent auto-contrast overrides */
   }
 }}%%
 mindmap
