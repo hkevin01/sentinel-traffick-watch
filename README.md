@@ -333,6 +333,56 @@ flowchart TD
     class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 leafNode
 ```
 
+### Behavioral Detection Classes
+
+```mermaid
+%%{init: {
+  "theme": "dark",
+  "themeVariables": {
+    "background": "#1a202c",
+    "mainBkg": "#2d3748",
+    "secondBkg": "#1a365d",
+    "tertiaryBkg": "#22543d",
+
+    "primaryColor": "#2d3748",
+    "primaryBorderColor": "#4a5568",
+    "lineColor": "#ffffff",
+
+    "primaryTextColor": "#ffffff",
+    "secondaryTextColor": "#ffffff",
+    "tertiaryTextColor": "#ffffff",
+    "textColor": "#ffffff"            /* General text color fallback */
+  }
+}}%%
+mindmap
+  root)Behavioral Indicators(
+    )Physical Aggression(
+      Striking motions
+      Pushing gestures
+      Grabbing actions
+      Threatening postures
+    )Coercive Control(
+      Adult-minor proximity
+      Restrictive movement
+      Hand-to-arm contact
+      Velocity mismatch
+    )Group Dynamics(
+      Surrounding formation
+      Coordinated movement
+      Power positioning
+      Escape blocking
+    )Suspicious Exchanges(
+      Brief encounters
+      Object transfers
+      Rapid divergence
+      Directional changes
+    )Predatory Behavior(
+      Prolonged observation
+      Targeted approach
+      Following patterns
+      Isolation attempts
+'''
+
 ### Privacy & Ethics Framework
 
 | Principle | Implementation | Technology | Compliance |
