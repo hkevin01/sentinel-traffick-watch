@@ -292,38 +292,37 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A((🧠 Behavioral<br/>Indicators))
+    A((🧠 Behavioral Indicators<br/>Detection System))
 
-    A --- B((🔴 Physical<br/>Aggression))
-    A --- C((⚖️ Coercive<br/>Control))
-    A --- D((👥 Group<br/>Dynamics))
-    A --- E((🔄 Suspicious<br/>Exchanges))
-    A --- F((👁️ Predatory<br/>Behavior))
+    A --> B((� Physical Aggression))
+    B --> B1((Striking motions))
+    B --> B2((Pushing gestures))
+    B --> B3((Grabbing actions))
+    B --> B4((Threatening postures))
 
-    B --- B1((Striking<br/>motions))
-    B --- B2((Pushing<br/>gestures))
-    B --- B3((Grabbing<br/>actions))
-    B --- B4((Threatening<br/>postures))
+    A --> C((⚖️ Coercive Control))
+    C --> C1((Adult-minor proximity))
+    C --> C2((Restrictive movement))
+    C --> C3((Hand-to-arm contact))
+    C --> C4((Velocity mismatch))
 
-    C --- C1((Adult-minor<br/>proximity))
-    C --- C2((Restrictive<br/>movement))
-    C --- C3((Hand-to-arm<br/>contact))
-    C --- C4((Velocity<br/>mismatch))
+    A --> D((👥 Group Dynamics))
+    D --> D1((Surrounding formation))
+    D --> D2((Coordinated movement))
+    D --> D3((Power positioning))
+    D --> D4((Escape blocking))
 
-    D --- D1((Surrounding<br/>formation))
-    D --- D2((Coordinated<br/>movement))
-    D --- D3((Power<br/>positioning))
-    D --- D4((Escape<br/>blocking))
+    A --> E((🔄 Suspicious Exchanges))
+    E --> E1((Brief encounters))
+    E --> E2((Object transfers))
+    E --> E3((Rapid divergence))
+    E --> E4((Directional changes))
 
-    E --- E1((Brief<br/>encounters))
-    E --- E2((Object<br/>transfers))
-    E --- E3((Rapid<br/>divergence))
-    E --- E4((Directional<br/>changes))
-
-    F --- F1((Prolonged<br/>observation))
-    F --- F2((Targeted<br/>approach))
-    F --- F3((Following<br/>patterns))
-    F --- F4((Isolation<br/>attempts))
+    A --> F((👁️ Predatory Behavior))
+    F --> F1((Prolonged observation))
+    F --> F2((Targeted approach))
+    F --> F3((Following patterns))
+    F --> F4((Isolation attempts))
 
     classDef rootNode fill:#2d3748,stroke:#4a5568,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:14px
     classDef categoryNode fill:#1a365d,stroke:#2c5282,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
@@ -332,9 +331,7 @@ flowchart TD
     class A rootNode
     class B,C,D,E,F categoryNode
     class B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4 leafNode
-```
-
-### Privacy & Ethics Framework
+```### Privacy & Ethics Framework
 
 | Principle | Implementation | Technology | Compliance |
 |-----------|----------------|------------|-------------|
