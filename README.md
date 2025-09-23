@@ -326,23 +326,23 @@ flowchart TD
     g.mindmap-node:nth-of-type(5n+4) path,
     g.mindmap-node:nth-of-type(5n+4) rect,
     g.mindmap-node:nth-of-type(5n+4) circle,
-    g.mindmap-node:nth-of-type(5n+4) ellipse { fill: #EF476F !important; }  /* pink */
+    g.mindmap-node:nth-of-type(5n+4) ellipse { fill: #ffffffff !important; }  /* pink */
     g.mindmap-node:nth-of-type(5n) path,
     g.mindmap-node:nth-of-type(5n) rect,
     g.mindmap-node:nth-of-type(5n) circle,
-    g.mindmap-node:nth-of-type(5n) ellipse { fill: #A66CFF !important; }    /* violet */
+    g.mindmap-node:nth-of-type(5n) ellipse { fill: #ffffffff !important; }    /* violet */
 
     /* Ensure labels are readable */
     g.mindmap-node text,
     .label text,
     g.mindmap-node .nodeLabel {
-      fill: #111111 !important;
+      fill: #ffffffff !important;
       font-weight: 600;
     }
 
     /* Edge styling */
     .edgePaths path, .edgePath .path {
-      stroke: #2b2d42 !important;
+      stroke: #ffffffff !important;
       stroke-width: 2px !important;
     }
   "
