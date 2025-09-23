@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Docker](https://img.shields.io/badge/do    A --> B((🔴 Physical Aggression))   A --> B((🔴 Physical Aggression))   A --> B((🔴 Physical Aggression))   A --> B((🔴 Physical Aggression))ker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 
 **AI-Powered Human Trafficking Detection System**
@@ -296,33 +296,33 @@ flowchart TD
 
     A --> B((� Physical Aggression))
     B --> B1((Striking motions))
-    B --> B2((Pushing gestures))
-    B --> B3((Grabbing actions))
-    B --> B4((Threatening postures))
+    B1 --> B2((Pushing gestures))
+    B2 --> B3((Grabbing actions))
+    B3 --> B4((Threatening postures))
 
-    A --> C((⚖️ Coercive Control))
+    B4 --> C((⚖️ Coercive Control))
     C --> C1((Adult-minor proximity))
-    C --> C2((Restrictive movement))
-    C --> C3((Hand-to-arm contact))
-    C --> C4((Velocity mismatch))
+    C1 --> C2((Restrictive movement))
+    C2 --> C3((Hand-to-arm contact))
+    C3 --> C4((Velocity mismatch))
 
-    A --> D((👥 Group Dynamics))
+    C4 --> D((👥 Group Dynamics))
     D --> D1((Surrounding formation))
-    D --> D2((Coordinated movement))
-    D --> D3((Power positioning))
-    D --> D4((Escape blocking))
+    D1 --> D2((Coordinated movement))
+    D2 --> D3((Power positioning))
+    D3 --> D4((Escape blocking))
 
-    A --> E((🔄 Suspicious Exchanges))
+    D4 --> E((🔄 Suspicious Exchanges))
     E --> E1((Brief encounters))
-    E --> E2((Object transfers))
-    E --> E3((Rapid divergence))
-    E --> E4((Directional changes))
+    E1 --> E2((Object transfers))
+    E2 --> E3((Rapid divergence))
+    E3 --> E4((Directional changes))
 
-    A --> F((👁️ Predatory Behavior))
+    E4 --> F((👁️ Predatory Behavior))
     F --> F1((Prolonged observation))
-    F --> F2((Targeted approach))
-    F --> F3((Following patterns))
-    F --> F4((Isolation attempts))
+    F1 --> F2((Targeted approach))
+    F2 --> F3((Following patterns))
+    F3 --> F4((Isolation attempts))
 
     classDef rootNode fill:#2d3748,stroke:#4a5568,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:14px
     classDef categoryNode fill:#1a365d,stroke:#2c5282,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
