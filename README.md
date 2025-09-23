@@ -292,23 +292,48 @@ flowchart TD
 
 ```mermaid
 %%{init: {
-  "theme": "dark",
-  "maxTextSize": 42,
+  "theme": "base",
   "themeVariables": {
-    "background": "#1a202c",
+    "background": "#0b0b0b",
 
-    "mainBkg": "#2d3748",
-    "secondBkg": "#1a365d",
-    "tertiaryBkg": "#22543d",
+    /* Bright node backgrounds */
+    "mainBkg": "#FFD166",        /* warm yellow */
+    "secondBkg": "#06D6A0",      /* mint green */
+    "tertiaryBkg": "#118AB2",    /* azure blue */
 
-    "primaryColor": "#2d3748",
-    "primaryBorderColor": "#4a5568",
-    "lineColor": "#ffffff",
+    /* Borders and lines for contrast */
+    "primaryColor": "#073B4C",   /* dark border */
+    "primaryBorderColor": "#073B4C",
+    "lineColor": "#000000",
 
-    "textColor": "#ffffff",
-    "nodeTextColor": "#ffffff",
-    "contrast": "false"   /* prevent auto-contrast overrides */
-  }
+    /* Let Mermaid compute dark text for bright bg */
+    "textColor": "#111111",
+    "nodeTextColor": "#111111"
+  },
+  "themeCSS": "
+    /* Force vivid backgrounds for all mindmap nodes (covers variations) */
+    .mindmap-node rect, .mindmap-node circle, .mindmap-node ellipse {
+      fill: #FFD166 !important; /* default bright yellow */
+      stroke: #073B4C !important;
+      stroke-width: 1.5px;
+    }
+    /* Alternate colors by depth for visual grouping */
+    .mindmap-node.depth-1 rect, .mindmap-node.depth-1 circle, .mindmap-node.depth-1 ellipse { fill: #FFD166 !important; }
+    .mindmap-node.depth-2 rect, .mindmap-node.depth-2 circle, .mindmap-node.depth-2 ellipse { fill: #06D6A0 !important; }
+    .mindmap-node.depth-3 rect, .mindmap-node.depth-3 circle, .mindmap-node.depth-3 ellipse { fill: #118AB2 !important; }
+    .mindmap-node.depth-4 rect, .mindmap-node.depth-4 circle, .mindmap-node.depth-4 ellipse { fill: #EF476F !important; }
+    .mindmap-node.depth-5 rect, .mindmap-node.depth-5 circle, .mindmap-node.depth-5 ellipse { fill: #A66CFF !important; }
+
+    /* Ensure text stays dark for readability on bright fills */
+    .mindmap-node text, .label text {
+      fill: #111111 !important;
+    }
+
+    /* Edge colors */
+    .edgePaths path, .edgePath .path {
+      stroke: #000000 !important;
+    }
+  "
 }}%%
 mindmap
   root)Behavioral Indicators(
