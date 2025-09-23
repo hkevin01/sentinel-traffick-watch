@@ -291,6 +291,7 @@ flowchart TD
 ### Behavioral Detection Classes
 
 ```mermaid
+%%{init: {'mindmap': {'theme': 'dark'}, 'themeVariables': {'primaryColor': '#2d3748', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4a5568', 'lineColor': '#718096', 'secondaryColor': '#1a365d', 'tertiaryColor': '#22543d'}}}%%
 mindmap
   root((Behavioral<br/>Indicators))
     Physical Aggression
