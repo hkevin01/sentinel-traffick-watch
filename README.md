@@ -265,28 +265,28 @@ flowchart TD
 
 ### Core Technologies Comparison
 
-| Technology | Purpose | Why Chosen | Alternatives Considered |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Alternatives Considered</sub> |
 |------------|---------|------------|------------------------|
-| **Python 3.11+** | Primary Language | • Excellent ML/CV ecosystem<br/>• Async/await support<br/>• Rich data science libraries<br/>• Fast prototyping | C++ (performance), Rust (safety), Go (concurrency) |
-| **YOLOv11n** | Person Detection | • State-of-the-art accuracy<br/>• Real-time performance<br/>• ONNX export support<br/>• Nano variant for edge | YOLOX, YOLOv8, EfficientDet, RetinaNet |
-| **RTMPose** | Pose Estimation | • Lightweight architecture<br/>• High accuracy on occluded poses<br/>• Mobile-optimized variants<br/>• MMPose ecosystem | MediaPipe, OpenPose, PoseNet, AlphaPose |
-| **ByteTrack** | Multi-Object Tracking | • SOTA tracking performance<br/>• Robust to occlusions<br/>• Low computational overhead<br/>• Association quality | SORT, DeepSORT, FairMOT, CenterTrack |
-| **Apache Kafka** | Message Streaming | • High throughput<br/>• Fault tolerance<br/>• Horizontal scaling<br/>• Event sourcing support | NATS, RabbitMQ, Redis Streams, Pulsar |
-| **PostgreSQL** | Primary Database | • ACID compliance<br/>• JSON/JSONB support<br/>• Mature ecosystem<br/>• Extension support | MySQL, MongoDB, CockroachDB |
-| **TimescaleDB** | Time Series Data | • PostgreSQL extension<br/>• Time-based partitioning<br/>• Compression<br/>• SQL compatibility | InfluxDB, Prometheus, ClickHouse |
-| **FastAPI** | Web Framework | • Automatic OpenAPI docs<br/>• Type hints integration<br/>• High performance<br/>• Modern async support | Flask, Django, Starlette, Tornado |
-| **Docker** | Containerization | • Consistent environments<br/>• Easy deployment<br/>• Resource isolation<br/>• CI/CD integration | Podman, LXC, rkt |
-| **Kubernetes** | Orchestration | • Auto-scaling<br/>• Service discovery<br/>• Rolling deployments<br/>• GPU scheduling | Docker Swarm, Nomad, ECS |
+| <sub>**Python 3.11+**</sub> | <sub>Primary Language</sub> | <sub>• Excellent ML/CV ecosystem<br/>• Async/await support<br/>• Rich data science libraries<br/>• Fast prototyping</sub> | <sub>C++ (performance), Rust (safety), Go (concurrency)</sub> |
+| <sub>**YOLOv11n**</sub> | <sub>Person Detection</sub> | <sub>• State-of-the-art accuracy<br/>• Real-time performance<br/>• ONNX export support<br/>• Nano variant for edge</sub> | <sub>YOLOX, YOLOv8, EfficientDet, RetinaNet</sub> |
+| <sub>**RTMPose**</sub> | <sub>Pose Estimation</sub> | <sub>• Lightweight architecture<br/>• High accuracy on occluded poses<br/>• Mobile-optimized variants<br/>• MMPose ecosystem</sub> | <sub>MediaPipe, OpenPose, PoseNet, AlphaPose</sub> |
+| <sub>**ByteTrack**</sub> | <sub>Multi-Object Tracking</sub> | <sub>• SOTA tracking performance<br/>• Robust to occlusions<br/>• Low computational overhead<br/>• Association quality</sub> | <sub>SORT, DeepSORT, FairMOT, CenterTrack</sub> |
+| <sub>**Apache Kafka**</sub> | <sub>Message Streaming</sub> | <sub>• High throughput<br/>• Fault tolerance<br/>• Horizontal scaling<br/>• Event sourcing support</sub> | <sub>NATS, RabbitMQ, Redis Streams, Pulsar</sub> |
+| <sub>**PostgreSQL**</sub> | <sub>Primary Database</sub> | <sub>• ACID compliance<br/>• JSON/JSONB support<br/>• Mature ecosystem<br/>• Extension support</sub> | <sub>MySQL, MongoDB, CockroachDB</sub> |
+| <sub>**TimescaleDB**</sub> | <sub>Time Series Data</sub> | <sub>• PostgreSQL extension<br/>• Time-based partitioning<br/>• Compression<br/>• SQL compatibility</sub> | <sub>InfluxDB, Prometheus, ClickHouse</sub> |
+| <sub>**FastAPI**</sub> | <sub>Web Framework</sub> | <sub>• Automatic OpenAPI docs<br/>• Type hints integration<br/>• High performance<br/>• Modern async support</sub> | <sub>Flask, Django, Starlette, Tornado</sub> |
+| <sub>**Docker**</sub> | <sub>Containerization</sub> | <sub>• Consistent environments<br/>• Easy deployment<br/>• Resource isolation<br/>• CI/CD integration</sub> | <sub>Podman, LXC, rkt</sub> |
+| <sub>**Kubernetes**</sub> | <sub>Orchestration</sub> | <sub>• Auto-scaling<br/>• Service discovery<br/>• Rolling deployments<br/>• GPU scheduling</sub> | <sub>Docker Swarm, Nomad, ECS</sub> |
 
 ### Machine Learning Model Architecture
 
-| Component | Model | Input | Output | Performance |
+| <sub>Component</sub> | <sub>Model</sub> | <sub>Input</sub> | <sub>Output</sub> | <sub>Performance</sub> |
 |-----------|-------|-------|--------|-------------|
-| **Person Detection** | YOLOv11n | 640x640 RGB | Bounding boxes + confidence | 35+ FPS on RTX 3060 |
-| **Pose Estimation** | RTMPose-Tiny | Person crops | 17 keypoints + visibility | 25+ FPS on RTX 3060 |
-| **Action Recognition** | ST-GCN-Lite | Keypoint sequences | Action probabilities | 50+ FPS on RTX 3060 |
-| **Person Re-ID** | FastReID-Small | Person crops | 512-dim embeddings | 100+ FPS on RTX 3060 |
-| **Risk Scoring** | Logistic Regression | Feature vectors | Risk probability | 1000+ FPS CPU |
+| <sub>**Person Detection**</sub> | <sub>YOLOv11n</sub> | <sub>640x640 RGB</sub> | <sub>Bounding boxes + confidence</sub> | <sub>35+ FPS on RTX 3060</sub> |
+| <sub>**Pose Estimation**</sub> | <sub>RTMPose-Tiny</sub> | <sub>Person crops</sub> | <sub>17 keypoints + visibility</sub> | <sub>25+ FPS on RTX 3060</sub> |
+| <sub>**Action Recognition**</sub> | <sub>ST-GCN-Lite</sub> | <sub>Keypoint sequences</sub> | <sub>Action probabilities</sub> | <sub>50+ FPS on RTX 3060</sub> |
+| <sub>**Person Re-ID**</sub> | <sub>FastReID-Small</sub> | <sub>Person crops</sub> | <sub>512-dim embeddings</sub> | <sub>100+ FPS on RTX 3060</sub> |
+| <sub>**Risk Scoring**</sub> | <sub>Logistic Regression</sub> | <sub>Feature vectors</sub> | <sub>Risk probability</sub> | <sub>1000+ FPS CPU</sub> |
 
 ### Behavioral Detection Classes
 
@@ -323,14 +323,14 @@ mindmap
 
 ### Privacy & Ethics Framework
 
-| Principle | Implementation | Technology | Compliance |
+| <sub>Principle</sub> | <sub>Implementation</sub> | <sub>Technology</sub> | <sub>Compliance</sub> |
 |-----------|----------------|------------|-------------|
-| **Face Privacy** | Automatic face blurring | OpenCV + MTCNN detection | GDPR Article 9 |
-| **Minor Protection** | Age estimation + enhanced blur | Age classification model | COPPA compliance |
-| **Data Minimization** | Configurable retention periods | TimescaleDB lifecycle policies | GDPR Article 5 |
-| **Consent Management** | Opt-in data collection | User service + consent logs | GDPR Article 7 |
-| **Audit Trails** | Comprehensive action logging | Structured logs + immutable storage | SOX compliance |
-| **Differential Privacy** | Statistical noise injection | DP-SGD algorithms | Academic standards |
+| <sub>**Face Privacy**</sub> | <sub>Automatic face blurring</sub> | <sub>OpenCV + MTCNN detection</sub> | <sub>GDPR Article 9</sub> |
+| <sub>**Minor Protection**</sub> | <sub>Age estimation + enhanced blur</sub> | <sub>Age classification model</sub> | <sub>COPPA compliance</sub> |
+| <sub>**Data Minimization**</sub> | <sub>Configurable retention periods</sub> | <sub>TimescaleDB lifecycle policies</sub> | <sub>GDPR Article 5</sub> |
+| <sub>**Consent Management**</sub> | <sub>Opt-in data collection</sub> | <sub>User service + consent logs</sub> | <sub>GDPR Article 7</sub> |
+| <sub>**Audit Trails**</sub> | <sub>Comprehensive action logging</sub> | <sub>Structured logs + immutable storage</sub> | <sub>SOX compliance</sub> |
+| <sub>**Differential Privacy**</sub> | <sub>Statistical noise injection</sub> | <sub>DP-SGD algorithms</sub> | <sub>Academic standards</sub> |
 
 ## 🚀 Key Features
 
@@ -461,14 +461,14 @@ python scripts/profiling/gpu_analysis.py --duration 300
 
 ### Environment Variables
 
-| Variable | Description | Default |
+| <sub>Variable</sub> | <sub>Description</sub> | <sub>Default</sub> |
 |----------|-------------|---------|
-| `APP_CONFIG` | Path to main configuration file | `CONFIG.yaml` |
-| `LOG_LEVEL` | Logging verbosity | `INFO` |
-| `KAFKA_BOOTSTRAP` | Kafka broker addresses | `kafka:9092` |
-| `DATABASE_URL` | PostgreSQL connection string | `postgresql://postgres:postgres@postgres:5432/postgres` |
-| `REDIS_URL` | Redis connection string | `redis://redis:6379` |
-| `S3_ENDPOINT` | Object storage endpoint | `http://minio:9000` |
+| <sub>`APP_CONFIG`</sub> | <sub>Path to main configuration file</sub> | <sub>`CONFIG.yaml`</sub> |
+| <sub>`LOG_LEVEL`</sub> | <sub>Logging verbosity</sub> | <sub>`INFO`</sub> |
+| <sub>`KAFKA_BOOTSTRAP`</sub> | <sub>Kafka broker addresses</sub> | <sub>`kafka:9092`</sub> |
+| <sub>`DATABASE_URL`</sub> | <sub>PostgreSQL connection string</sub> | <sub>`postgresql://postgres:postgres@postgres:5432/postgres`</sub> |
+| <sub>`REDIS_URL`</sub> | <sub>Redis connection string</sub> | <sub>`redis://redis:6379`</sub> |
+| <sub>`S3_ENDPOINT`</sub> | <sub>Object storage endpoint</sub> | <sub>`http://minio:9000`</sub> |
 
 ### Detection Thresholds
 
@@ -488,20 +488,20 @@ thresholds:
 
 ### Hardware Requirements
 
-| Deployment | GPU | RAM | Streams | Latency |
+| <sub>Deployment</sub> | <sub>GPU</sub> | <sub>RAM</sub> | <sub>Streams</sub> | <sub>Latency</sub> |
 |------------|-----|-----|---------|---------|
-| **Edge** | RTX 3060 | 16GB | 4x1080p | <800ms |
-| **Server** | RTX 4090 | 32GB | 16x1080p | <600ms |
-| **Cluster** | 4x A100 | 128GB | 64x1080p | <400ms |
+| <sub>**Edge**</sub> | <sub>RTX 3060</sub> | <sub>16GB</sub> | <sub>4x1080p</sub> | <sub><800ms</sub> |
+| <sub>**Server**</sub> | <sub>RTX 4090</sub> | <sub>32GB</sub> | <sub>16x1080p</sub> | <sub><600ms</sub> |
+| <sub>**Cluster**</sub> | <sub>4x A100</sub> | <sub>128GB</sub> | <sub>64x1080p</sub> | <sub><400ms</sub> |
 
 ### Model Performance
 
-| Model | mAP@0.5 | Precision | Recall | FPS |
+| <sub>Model</sub> | <sub>mAP@0.5</sub> | <sub>Precision</sub> | <sub>Recall</sub> | <sub>FPS</sub> |
 |-------|---------|-----------|--------|-----|
-| Person Detection | 0.94 | 0.91 | 0.96 | 35 |
-| Pose Estimation | 0.88 | 0.85 | 0.91 | 25 |
-| Action Recognition | 0.76 | 0.82 | 0.71 | 50 |
-| Behavioral Detection | 0.68 | 0.85 | 0.58 | - |
+| <sub>Person Detection</sub> | <sub>0.94</sub> | <sub>0.91</sub> | <sub>0.96</sub> | <sub>35</sub> |
+| <sub>Pose Estimation</sub> | <sub>0.88</sub> | <sub>0.85</sub> | <sub>0.91</sub> | <sub>25</sub> |
+| <sub>Action Recognition</sub> | <sub>0.76</sub> | <sub>0.82</sub> | <sub>0.71</sub> | <sub>50</sub> |
+| <sub>Behavioral Detection</sub> | <sub>0.68</sub> | <sub>0.85</sub> | <sub>0.58</sub> | <sub>-</sub> |
 
 ## 🛡️ Security Considerations
 
